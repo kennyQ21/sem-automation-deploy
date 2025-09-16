@@ -1,0 +1,39 @@
+# Core LLM orchestration
+langchain
+langgraph
+
+# AI APIs
+openai>=1.84.0             # for GPT-4
+google-ads==27.0.0         # Google Ads API (compatible with Python 3.13)
+
+# Database & Vector Storage
+psycopg2-binary           # PostgreSQL adapter
+pgvector                  # PostgreSQL vector extension
+# sqlite3 is built into Python - no need to install
+
+# ML & Clustering
+scikit-learn
+hdbscan                   # Advanced clustering
+sentence-transformers     # Text embeddings
+numpy
+
+# Web scraping
+beautifulsoup4
+requests
+
+# Backend framework (optional for demo API)
+fastapi
+uvicorn
+
+# Data handling & exports
+pandas
+openpyxl                   # Excel export (optional)
+python-docx                # Word export (optional)
+
+# Environment & Config
+python-dotenv
+pydantic
+
+# Testing
+pytest
+pytest-asyncio
