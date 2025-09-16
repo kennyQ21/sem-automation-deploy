@@ -1,0 +1,27 @@
+# Google Ads API Configuration
+# Fill in your actual credentials
+
+developer_token: "vNtg5pm9gyUPvkHRyZDfTA"
+client_id: "614269898885-shtaknlh0hg9tgsh6mmdgdnuf76g5qda.apps.googleusercontent.com"
+client_secret: "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"
+refresh_token: "1//0g871L7kbyz4vCgYIARAAGBASNwF-L9Ir3tD0K21ChY2CMa9hKyp6fDTXCXCbF4gOq-Xn58VPjA07N6RSUMahhM_92zmsEVsSTIY"
+login_customer_id: "9729945288"
+customer_id: "5686133715"
+
+# Optional settings
+use_proto_plus: True
+logging:
+  version: 1
+  disable_existing_loggers: False
+  formatters:
+    default_fmt:
+      format: '[%(asctime)s - %(levelname)s] %(message)s'
+      datefmt: '%Y-%m-%d %H:%M:%S'
+  handlers:
+    default_handler:
+      class: logging.StreamHandler
+      formatter: default_fmt
+  loggers:
+    "google.ads.googleads.client":
+      level: INFO
+      handlers: [default_handler]
